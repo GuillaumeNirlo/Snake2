@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    tools:context=".Complete">
+
+    <ImageView
+        android:id="@+id/gameover"
+        android:layout_width="wrap_content"
+        android:layout_height="145dp"
+
+
+        app:srcCompat="@drawable/gmover" />
+
+    <TextView
+        android:id="@+id/nbApples"
+        android:layout_width="wrap_content"
+        android:layout_height="82dp"
+        android:layout_below="@id/gameover"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="@string/count"
+        android:textSize="100px" />
+
+
+    <Button
+        android:id="@+id/restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_below="@id/nbApples"
+
+        android:text="REESSAYER" />
+
+    <Button
+        android:id="@+id/retour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_below="@id/nbApples"
+        android:layout_toRightOf="@id/restart"
+        android:text="RETOUR AU MENU" />
+
+    <Button
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nbApples"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_toRightOf="@id/retour"
+        android:text="RECORDS" />
+
+
+
+</LinearLayout>
